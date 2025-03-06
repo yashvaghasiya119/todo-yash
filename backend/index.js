@@ -22,7 +22,7 @@ app.use(cors({
 app.use(cookieParser()  )
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
-app.use("/" , (req,res)=>{
+app.use("/api" , (req,res)=>{
     return res.send("hello")
 })
 app.use("/api/user" , userroute )

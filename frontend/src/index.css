@@ -1,0 +1,197 @@
+/* Container for the navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style for the navigation list */
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style for individual nav items */
+.nav-links li {
+    margin: 0 15px;
+}
+
+/* Style for nav links */
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for nav links */
+.nav-link:hover {
+    color: #ff6600; /* Example hover color */
+}
+
+/* Active link style */
+.nav-link.active {
+    font-weight: bold;
+    color: #ff6600; /* Example active link color */
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4; /* Light background for the page */
+}
+
+/* Form container */
+.signup-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 100%;
+}
+
+/* Heading style */
+.signup-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style for each form group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label style */
+.form-group label {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Input field styling */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Input field focus state */
+.form-group input:focus {
+    border-color: #ff6600;
+    outline: none;
+}
+
+/* Submit button styling */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6600; /* Example button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the submit button */
+.submit-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Todo container style */
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Individual Todo item */
+.todo-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Todo work (title) */
+.todo-work {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+/* Todo date */
+.todo-date {
+    font-size: 1rem;
+    color: #888;
+    margin: 0;
+}
+
+/* Button container (Update/Delete buttons) */
+.todo-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+/* Update Button Style */
+.update-btn {
+    padding: 8px 16px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.update-btn:hover {
+    background-color: #45a049;
+}
+
+/* Delete Button Style */
+.delete-btn {
+    padding: 8px 16px;
+    font-size: 1rem;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #e53935;
+}
+.update-cancel{
+    display: flex;
+}
+.cancel{
+    background-color: white;
+    color: black;
+    border: 1.6px solid black;
+}
+.submit:hover{
+    background-color: white;
+    color: black;
+    border: 1.6px solid black;
+}

@@ -10,7 +10,7 @@ export function Home() {
     const [dataupdats, setdataupdate] = useState(false)
     const dateandwork = { work, date }
     async function fetchdata() {
-        let fe = await fetch("http://localhost:8000/todo/allworks", {
+        let fe = await fetch("http://localhost:8000/api/todo/allworks", {
             credentials: 'include'
         });
         let res = await fe.json()
@@ -29,7 +29,7 @@ export function Home() {
     }
     async function handleSubmit(e) {
         e.preventDefault()
-        const responce = await fetch(`http://localhost:8000/todo/update/${userid}`, {
+        const responce = await fetch(`http://localhost:8000/api/todo/update/${userid}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
@@ -52,7 +52,7 @@ export function Home() {
     async function deletefun(id) {
         console.log(id);
         
-        const responce = await fetch(`http://localhost:8000/todo/delete/${id}`, {
+        const responce = await fetch(`http://localhost:8000/todo/api/delete/${id}`, {
             method:"DELETE",
             credentials: 'include',
         })

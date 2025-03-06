@@ -13,7 +13,7 @@ export function Signup() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const response = await fetch('http://localhost:8000/user/signup', {
+        const response = await fetch('http://localhost:8000/api/user/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

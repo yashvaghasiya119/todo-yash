@@ -12,7 +12,7 @@ export function Data() {
  const data = {work,date}
     async function handleSubmit(e){
         e.preventDefault()
-        const responce = await fetch("http://localhost:8000/todo",{
+        const responce = await fetch("http://localhost:8000/api/todo",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
@@ -34,7 +34,7 @@ export function Data() {
         
     }
     async function response2(){
-        const res2 = await fetch("http://localhost:8000/todo/api/checkLoginStatus", {
+        const res2 = await fetch("http://localhost:8000/api/todo/api/checkLoginStatus", {
             credentials: 'include',
         });
         const res2json = await res2.json()

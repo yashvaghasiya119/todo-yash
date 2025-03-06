@@ -10,7 +10,7 @@ export function Login() {
     const navi = useNavigate()
     async function submitform(e) {
         e.preventDefault()
-        const response = await fetch("http://localhost:8000/user/login", {
+        const response = await fetch("http://localhost:8000/api/user/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

@@ -25,8 +25,8 @@ app.use(express.json())
 app.use("/" , (req,res)=>{
     return res.send("hello")
 })
-app.use("/user" , userroute )
-app.use("/todo" , checklogin,todoroute )
+app.use("/api/user" , userroute )
+app.use("/api/todo" , checklogin,todoroute )
 
 app.listen(8000,()=>console.log("run 8000")
 )
